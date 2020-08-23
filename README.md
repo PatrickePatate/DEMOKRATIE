@@ -13,5 +13,6 @@ DEMOKRATIE permet de ...
 
 **DEMOKRATIE** est encore en développement (plus ou moins régulier) pour ajouter de nouvelles fonctionnalités et corriger certains bugs, n'hésitez pas à ouvrir une issue si vous trouvez un bug ou si vous voulez suggérer une fonctionnalité.
 
-##__________________________________________________##
+##__________________________________________________
+
 L'utilisation de DEMOKRATIE est libre est encouragée, cependant merci de me crédité quelque part et de ne pas en tirer profit. 
