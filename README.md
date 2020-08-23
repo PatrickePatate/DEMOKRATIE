@@ -2,6 +2,7 @@
 DEMOKRATIE est un intranet permettant à des associations ou organisations de soumettre au vote des propositions à un panel d'utilisateurs
 
 **Fonctionnalités**
+
 DEMOKRATIE permet de ...
 * Créer des votes et sous-votes ayant différents niveaux de confidentialités (Public, privé, gestion de groupes d'utilisateurs)
 * Visualiser simplement et en temps réel les résultats de vos votes
