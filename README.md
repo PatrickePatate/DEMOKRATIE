@@ -13,6 +13,9 @@ DEMOKRATIE permet de ...
 
 **DEMOKRATIE** est encore en développement (plus ou moins régulier) pour ajouter de nouvelles fonctionnalités et corriger certains bugs, n'hésitez pas à ouvrir une issue si vous trouvez un bug ou si vous voulez suggérer une fonctionnalité.
 
+##### Installation
+**DEMOKRATIE** nécéssite simplement un serveur web avec une version récente de PHP et une base de donnée, la structure de la base de donnée est contenue dans le fichier c5vote.sql (à la racine).
+
 ## 
 
 L'utilisation de DEMOKRATIE est libre est encouragée, cependant merci de me crédité quelque part et de ne pas en tirer profit. 
