@@ -88,6 +88,13 @@ CREATE TABLE `users` (
   `datecreateaccount` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Contenu de la table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `username`, `password`, `imgpp`, `rank`, `groups`, `tmptoken`, `tmpmail`, `bio`, `validate`, `datecreateaccount`) VALUES
+(1, 'admin@admin.fr', 'admin', '$2y$10$4ErN6CVafukWPVd/SmowOuSuVtAZ.OzeOAwxq.qBqsYz8TWYSO7Ja', 'assets/images/default.jpg ', 5, '', NULL, NULL, '', 1, '2020-01-1 00:00:00');
+
 -- --------------------------------------------------------
 
 --
