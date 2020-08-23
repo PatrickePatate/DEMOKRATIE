@@ -14,7 +14,7 @@ DEMOKRATIE permet de ...
 **DEMOKRATIE** est encore en développement (plus ou moins régulier) pour ajouter de nouvelles fonctionnalités et corriger certains bugs, n'hésitez pas à ouvrir une issue si vous trouvez un bug ou si vous voulez suggérer une fonctionnalité.
 
 ##### Installation
-**DEMOKRATIE** nécéssite simplement un serveur web avec une version récente de PHP et une base de donnée, la structure de la base de donnée est contenue dans le fichier c5vote.sql (à la racine).
+**DEMOKRATIE** nécéssite simplement un serveur web avec une version récente de PHP et une base de donnée, la structure de la base de donnée est contenue dans le fichier c5vote.sql (à la racine). Théoriquement (je ne l'ai pas testé sur une autre machine) l'utilisateur par défaut est admin@admin.fr adm1n_
 
 ## 
 
