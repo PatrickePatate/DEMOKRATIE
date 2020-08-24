@@ -295,7 +295,7 @@ $content = preg_replace('`<script ?(.+)?> ?(.+)?<\/script>`isU', '', $content); 
             $.ajax({
                 type: 'POST',
                 data: {'id':<?=$_GET['id'];?>, 'votename':votename, 'opinion':vote},
-                url: "<?=$siteurl;?>"+'newlayout/inc/api/subvotes.php',
+                url: 'inc/api/subvotes.php',
                 cache: false,
                 success: function(response){
                     if(response.status== "error"){

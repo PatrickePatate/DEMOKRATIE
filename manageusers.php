@@ -412,7 +412,7 @@ $getallusers = $getallusers->fetchAll();
             $.ajax({
                 type: 'POST',
                 data: {'uid':id, 'action':'getinfos'},
-                url: "<?=$siteurl;?>"+'newlayout/inc/api/usermanagment.php',
+                url: 'inc/api/usermanagment.php',
                 cache: false,
                 success: function(response){
                     if(response.status== "error"){
