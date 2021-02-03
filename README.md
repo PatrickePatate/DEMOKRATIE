@@ -18,4 +18,4 @@ DEMOKRATIE permet de ...
 
 ## 
 
-L'utilisation de DEMOKRATIE est libre est encouragée, cependant merci de me crédité quelque part et de ne pas en tirer profit. 
+L'utilisation de DEMOKRATIE est libre et encouragée, cependant merci de me crédité quelque part et de ne pas en tirer profit. 
