@@ -232,7 +232,9 @@ if(isset($_POST['title']) AND isset($_POST['content']) AND isset($_POST['type'])
                                                 <div class="form-group">
                                                     <textarea rows="20" id="content" class="form-control" placeholder="Décrivez votre proposition..." name="content"></textarea>
                                                 </div>
+                                                <small>Vous pouvez utiliser [SVOTE]Sous-proposition[/SVOTE] pour créer des sous-votes !</small>
                                                 <div class="form-group">
+                                                    <br />
                                                     <label>Qui peut voir ce vote ?</label>
                                                     <select onchange="whocansee(this.options[this.selectedIndex].value);" class="form-control" name="type">
                                                         <option value="1">Public</option>
