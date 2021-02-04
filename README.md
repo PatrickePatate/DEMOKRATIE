@@ -13,9 +13,12 @@ DEMOKRATIE permet de ...
 
 **DEMOKRATIE** est encore en développement (plus ou moins régulier) pour ajouter de nouvelles fonctionnalités et corriger certains bugs, n'hésitez pas à ouvrir une issue si vous trouvez un bug ou si vous voulez suggérer une fonctionnalité.
 
-##### Installation
-**DEMOKRATIE** nécéssite simplement un serveur web avec une version récente de PHP et une base de donnée, la structure de la base de donnée est contenue dans le fichier c5vote.sql (à la racine). Théoriquement (je ne l'ai pas testé sur une autre machine) l'utilisateur par défaut est admin@admin.fr adm1n_
-La configuration des paramètres de base et de la base de donnée sont dans inc/config.php
+# Installation
+**DEMOKRATIE** nécéssite simplement un serveur web avec une version récente de PHP et une base de donnée, la structure de la base de donnée est contenue dans le fichier c5vote.sql (à la racine). Théoriquement (je ne l'ai pas testé sur une autre machine) l'utilisateur par défaut est admin@admin.fr adm1n_<br />
+-Premièrement créez la base de données avec le fichier SQL fourni<br />
+-Deuxièmement, configurez correctement votre base de donnée dans le fichier inc/config.php en y renseignant les accès ainsi que les infos complémentaires comme une clé d'API TinyCloud, ...<br />
+-Et enfin, rendez vous sur <votre_domaine.fr>/inc/slir/install pour initialiser correctement la bibliothèque SLIR utilisée pour les images.<br />
+DEMOKRATIE est prêt à être utilisé !
 
 ## 
 
