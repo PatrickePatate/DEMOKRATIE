@@ -15,6 +15,7 @@ DEMOKRATIE permet de ...
 
 ##### Installation
 **DEMOKRATIE** nécéssite simplement un serveur web avec une version récente de PHP et une base de donnée, la structure de la base de donnée est contenue dans le fichier c5vote.sql (à la racine). Théoriquement (je ne l'ai pas testé sur une autre machine) l'utilisateur par défaut est admin@admin.fr adm1n_
+La configuration des paramètres de base et de la base de donnée sont dans inc/config.php
 
 ## 
 
