@@ -27,7 +27,13 @@ class Timeline
 				}
 				if($d['type'] == "0+"){
 					$groups = json_decode($d['whosvoting'],1);
-					$mygroups = json_decode($this->_session['groups'],1);
+					if(isset($this->_session['groups'])){
+						$mygroups = json_decode($this->_session['groups'],1);
+					}else{
+						$mygroups = array();
+					}
+					
+
 					$match = 0;
 					foreach ($groups as $g) {
 						if(in_array($g, $mygroups)){
@@ -41,7 +47,7 @@ class Timeline
 			}
 			return $timeline;
 		}else{
-			return false;
+			return array();
 		}
 	}
 }

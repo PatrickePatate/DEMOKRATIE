@@ -149,7 +149,7 @@ if(isset($_POST['title']) AND isset($_POST['content']) AND isset($_POST['type'])
     * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 <script src="assets/scripts/jquery.min.js"></script>
-<script src="https://cdn.tiny.cloud/1/gt44dbyveoferxgf1em3t9ww2x4oywvroik3pftdi6dhflp5/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/<?=$tiny_api;?>/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
 
 <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>

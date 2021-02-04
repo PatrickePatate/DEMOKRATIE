@@ -60,9 +60,15 @@
 	                                        Gérer les utilisateurs
 	                                    </a>
                                 	</li>
+                                    <li>
+                                        <a href="managegroups.php">
+                                            <i class="metismenu-icon pe-7s-network"></i>
+                                            Gérer les groupes
+                                        </a>
+                                    </li>
                                 	<?php
                                 } ?>
-                                <li class="app-sidebar__heading">UI Components</li>
+                                <!--<li class="app-sidebar__heading">UI Components</li>
                                 <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-diamond"></i>
@@ -241,7 +247,7 @@
                                         </i>
                                         Upgrade to PRO
                                     </a>
-                                </li>
+                                </li>-->
                             </ul>
                         </div>
                     </div>

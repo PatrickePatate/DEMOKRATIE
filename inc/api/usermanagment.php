@@ -7,7 +7,11 @@ if(isset($_SESSION['rank']) AND $_SESSION['rank']>4){
 		$getuserinfos = $bdd->query("SELECT * FROM users WHERE id = ".$_POST['uid']);
 		if($getuserinfos->rowCount() == 1){
 			$getuserinfos = $getuserinfos->fetch();
-			$groups =json_decode($getuserinfos['groups'],1);
+			if(!empty($getuserinfos['groups'])){
+				$groups =json_decode($getuserinfos['groups'],1);
+			}else{
+				$groups = array("NULL");
+			}
 			$jsoncompatiblegroups="";
 			foreach ($groups as $key => $value) {
 				$jsoncompatiblegroups.=$key.",";

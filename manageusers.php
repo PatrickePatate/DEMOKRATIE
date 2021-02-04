@@ -265,7 +265,7 @@ $getallusers = $getallusers->fetchAll();
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">Gérer les groupes</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -294,7 +294,7 @@ $getallusers = $getallusers->fetchAll();
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                     <button type="button" onclick="document.getElementById('form_group').submit();" class="btn btn-primary">Mettre à jour</button>
                 </div>
             </div>
@@ -307,7 +307,7 @@ $getallusers = $getallusers->fetchAll();
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">Gérer le grade</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -338,7 +338,7 @@ $getallusers = $getallusers->fetchAll();
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                     <button type="button" onclick="document.getElementById('form_rank').submit();" class="btn btn-primary">Mettre à jour</button>
                 </div>
             </div>
@@ -351,7 +351,7 @@ $getallusers = $getallusers->fetchAll();
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Supprimer un utilisateur</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -375,7 +375,7 @@ $getallusers = $getallusers->fetchAll();
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                     <button type="button" disabled="true" onclick="document.getElementById('delete_form').submit();" id="deletebutton" class="btn btn-danger">Supprimer l'utilisateur</button>
                 </div>
             </div>
@@ -418,7 +418,15 @@ $getallusers = $getallusers->fetchAll();
                     if(response.status== "error"){
                         alert(response.message);
                     }else{
-                        JSON.parse(response.groups).forEach(set_groups);
+                        if(response.groups){
+                            JSON.parse(response.groups).forEach(set_groups);
+                            console.log("Passé");
+                        }else{
+                            $(document).ready(function() {
+                                $('#group_selector').select2();
+                            });
+                            console.log("Activate select2");
+                        }
                         document.getElementById('group_uid').value=id;
                         document.getElementById('username_group').innerHTML = "@"+response.username;
                         document.getElementById('email_group').innerHTML = response.email;
@@ -434,7 +442,7 @@ $getallusers = $getallusers->fetchAll();
             $.ajax({
                 type: 'POST',
                 data: {'uid':id, 'action':'getinfos'},
-                url: "<?=$siteurl;?>"+'newlayout/inc/api/usermanagment.php',
+                url: 'inc/api/usermanagment.php',
                 cache: false,
                 success: function(response){
                     if(response.status== "error"){
